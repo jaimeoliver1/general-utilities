@@ -1,5 +1,15 @@
 
 def send_mail(send_from, send_to, subject, text, files=None):
+    
+    ''' Python function for automatic mail sending
+    -------------------------------------------------------------
+    Parameters: 
+    - send_from: email adress (str)
+    - sent_to: email adress (str)
+    - subject (str)
+    - text (str)
+    - files: list of files to attach (path included) (str)
+    '''
 
     import smtplib
     from os.path import basename
